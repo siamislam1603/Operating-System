@@ -1,0 +1,27 @@
+
+ctrl+alt+t => terminal open
+pwd =>present working directory
+cd .. =>go to parent
+ls =>list of pwd
+cd /path =>when pwd is root
+cd path =>when pwd is not root
+cd / =>root
+cd /etc =>all info of pc
+white color => file
+blue color =>directory
+ls -al =>details lists 
+dr =>dir
+rw =>read-write
+x =>execution
+user(permission)-group(accessible members)-others
+clear =>clr terminal
+mkdir dirname =>make dir
+touch filename1 filename2.ext =>multiple file create(2 files creation)
+gedit filename => open file
+cp source_path dstination_path => copy
+mv s d=>move
+mv filename rename
+mv filename destination/rename =>mov and reanme both
+rm -f filename => remove filename
+rm -r dirName => remove directory
+cp -r source_path dest_path => copy pwd's all content to destination path

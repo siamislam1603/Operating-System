@@ -1,0 +1,38 @@
+wc filename=> word count(line no,word no,size in bytes)
+wc -l filename=> line no
+wc -w filename =>word no
+head filename=> default 10 lines show
+head -2 filename=> -2(line no)
+tail -2 filename => bottom 2 lines
+
+head -31 filename | tail -11 >> filename2.txt => read line no 21-31 & save it to the new file(here | => pipeline)
+find -name '*' =>find all in pwd
+find -name '*.txt'=> find all .txt file in pwd
+find -mtime -14 -ls =>(modified time of last 14 days list)
+find /path(from root) -mtime -60 -ls => last 60 days modified files lists
+find -type f(or d)=> file type(or dir type)
+find /sourcePathFromRoot -type d
+
+unique command:
+
+uniq filename=> show unique lines
+uniq -u filename=> only unique items in each lines
+sort filename=> sort alphabetically
+uniq -id filename => case insensitive & duplicate lines
+
+sort filename | uniq -id/iu/idc=>sort & show lines(idc=> case insensitive & duplicate & count line no)
+grep "regular expression" sourcePath=> global regular expression
+grep -n regularExpression sourcePath=> find all lines according to grep
+grep -wn rep sourcePath => take rep as word
+grep -iwn rep source => case insensitive
+grep -i "rep" *.txt=> for multiple txt file
+gzip filenmae=> original file compress
+gunzip filename.ext => decompress
+zip -r filename.zip copyfilename.ext
+unzip filename.zip
+tar -cvf new.tar filename file2.txt=> create
+tar -xvf new.tar=> extract 
+tar -tvf new.tar => show
+tar -czvf new.tgz
+tar -tzvf new.tgz
+tar -xzvf new.tgz

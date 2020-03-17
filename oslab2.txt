@@ -1,0 +1,23 @@
+full path => absolute path
+permission  hard-link-count user-permission group-permission file-size-in-byte
+chmod 756 filename/dirname=> for changing mode of permissions(rwx-rx-rw)
+chmod -R 755 dirname => changing permission for dir and exesting documents in this dir
+sudo adduser dirname => direct to root & create user under root(uses for changing password,group,adiministrative info) 
+cd /etc =>user info
+cat passwd => user info
+cat group => group info(groupname-encrypted password-group id-username)
+sudo passwd username => changing user password
+sudo chown chmod chgrp =>chng ownership,group
+-R for mode chng
+sudo chown -R chmod chgrp
+sudo chown -R username dirName => chng ownership of a dir
+sudo groupadd groupname => group creation
+N.B: primary group can't be deleted
+usermod -a -G groupname username => append the user to a group
+groups => user groups(qst group is the primary group)
+groups username => user info with group
+id username => info of user
+sudo usermod -g groupname username => chng the primary group of this user
+sudo chgrp -R groupname dirname => chng group of this dir
+sudo groupdel groupname => delete the group
+sudo userdel username => delete  the user
